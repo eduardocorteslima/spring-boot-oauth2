@@ -40,14 +40,23 @@ Resultado (exemplo):
 ```
 
 Realizar Requisição:
-> URL: http://localhost:8080/application/
+> URL: http://localhost:8080/application/entidade
 
-> Metodo: GET
+> Metodo: POST
 
 > Headers: Authorization
 
 > Value: bearer 77781e5f-8f4e-4f55-9fd0-344c2a6e367d
 
+> Media Type: Json (application/json)
+> Body: 
+
+```
+{     "nome": "Eduardo",
+      "valor": 2000,
+      "data": "2016-05-28T17:39:44.937"
+}
+```
 
 Resultado (exemplo):
 ```	
@@ -55,7 +64,7 @@ Resultado (exemplo):
     "id": "592caf211e8d641a64c9c755",
     "nome": "Eduardo",
     "valor": 2000,
-    "data": "2017-05-29T20:30:41.493"
+    "data": "2016-05-28T17:39:44.937"
   }
 ```
 
