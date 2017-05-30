@@ -3,3 +3,8 @@ security:
     client:
       client-id: foo
       client-secret: bar
+
+auth:
+  url: ""
+  codigo: ""
+  token: ""      
