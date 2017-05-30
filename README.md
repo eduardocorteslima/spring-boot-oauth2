@@ -15,11 +15,17 @@ Instalar o [PostMan] (https://www.getpostman.com/):
 
 
 > URL: http://localhost:8080/oauth/token?grant_type=password&scope=read&username=user&password=123
+
 > Metodo: POST
+
 > Authorization: Basic Auth
+
 > Username: foo
+
 > Password: bar
+
 > Content-Type: application/json
+
 
 
 Resultado (exemplo):
@@ -35,9 +41,13 @@ Resultado (exemplo):
 
 Realizar Requisição:
 > URL: http://localhost:8080/application/
+
 > Metodo: GET
+
 > Headers: Authorization
+
 > Value: bearer 77781e5f-8f4e-4f55-9fd0-344c2a6e367d
+
 
 Resultado (exemplo):
 ```	
