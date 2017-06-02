@@ -1,4 +1,4 @@
-package app.model;
+package api.model;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -16,7 +16,7 @@ import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
-public class AppEntity {
+public class MyEntity {
 
 	@Id
 	private String id;

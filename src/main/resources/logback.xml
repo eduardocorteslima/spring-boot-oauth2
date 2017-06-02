@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+
+	<appender name="SLACK" class="com.github.maricn.logback.SlackAppender">
+		<webhookUri>https://hooks.slack.com/services/111111111/000000000000000000000
+		</webhookUri>
+
+		<!-- Channel that you want to post - default is #general -->
+		<channel>#seucanal</channel>
+		<!-- Username of the messages sender -->
+		<username>teste</username>
+		<!-- Emoji to be used for messages -->
+		<iconEmoji>:scream:</iconEmoji>
+	</appender>
+
+	<!-- Currently recommended way of using Slack appender -->
+	<appender name="ASYNC_SLACK" class="ch.qos.logback.classic.AsyncAppender">
+		<appender-ref ref="SLACK" />
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>ERROR</level>
+		</filter>
+	</appender>
+
+	<logger name="api" level="ERROR">
+		<appender-ref ref="ASYNC_SLACK" />
+	</logger>
+
+</configuration>

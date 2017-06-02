@@ -1,10 +1,14 @@
+debug: true
+
 security:
   oauth2:
     client:
       client-id: foo
       client-secret: bar
+        
 
 auth:
   url: ""
   codigo: ""
   token: ""      
+  
